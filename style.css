@@ -73,6 +73,19 @@ body {
     transform: scale(1.05);
 }
 
+.container .data-container #error h3{
+    color: rgb(231, 65, 65);
+    font-family: monospace;
+}
+
+.container .data-container #loading{
+    display: none;
+}
+
+.container .data-container #loading i{
+    font-size: 50px;
+}
+
 @media screen and (max-width: 620px) {
     .container .data-container #card{
         width: 95%;

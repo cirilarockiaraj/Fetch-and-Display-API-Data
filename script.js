@@ -1,14 +1,21 @@
 const api_url = "https://jsonplaceholder.typicode.com/users";
 const data_container = document.querySelector("#data_container");
+const error_ele = document.querySelector("#error");
+const loading = document.querySelector("#loading");
 
 async function getUsers() {
   try {
+    loading.style.display = "block";
     const response = await fetch(api_url);
     const data = await response.json();
     console.log(data);
     updateUserList(data);
   } catch (error) {
     console.error("Error fetching users:", error);
+    error_ele.innerHTML =  `<h3>${error}</h3>`
+  }
+  finally{
+    loading.style.display = "none";
   }
 }
 
