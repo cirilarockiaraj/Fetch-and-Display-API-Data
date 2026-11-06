@@ -30,7 +30,7 @@ A simple and responsive web application that fetches user information from the J
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/user-cards-app.git
+   git clone https://github.com/cirilarockiaraj/Fetch-and-Display-API-Data
    ```
 
 2. Navigate to the project directory.
